@@ -5,7 +5,7 @@
     box-sizing: border-box;
     border: none;
 
-    font-family: 'inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -25,14 +25,15 @@ header {
     justify-content: space-between;
     padding: 42px;
     border-bottom: 1px solid #fff;
+    z-index: 999;
 }
 
-header .logo-js {
+.logo-js {
     display: flex;
     align-items: center;
 }
 
-header .logo-js .javascript {
+.logo-js .javascript {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
@@ -65,20 +66,6 @@ header .links-navigation a.nav-menu:hover::after {
     width: 100%;
 }
 
-header .links-navigation a.console-link {
-    background: #FFDE25;
-    padding: 8px 16px;
-    border-radius: 8px;
-    color: #000;
-    font-weight: bold;
-    font-size: 16px;
-    transition: all 0.2s linear;
-}
-
-header .links-navigation a.console-link:hover {
-    background: #ffc525;
-}
-
 .enterprise-use-js {
     display: flex;
     align-items: center;
@@ -89,4 +76,233 @@ header .links-navigation a.console-link:hover {
     padding: 16px;
     width: 1240px;
     border-radius: 8px;
+}
+
+.enterprise-use-js .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.enterprise-use-js .enterprise-logos a {
+    margin: 0 40px;
+}
+
+.ready-to-use {
+    background: #1F1F1F;
+    padding: 8px 16px;
+    margin: 0 auto;
+    max-width: fit-content;
+    margin-bottom: 80px;
+}
+
+.ready-to-use .is-ready {
+    color: #FFDE25;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.console-js {
+    position: relative;
+    background: #343434;
+    width: 100%;
+    max-width: 1240px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+.console-js .top-console {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.console-js .top-console img {
+    margin: 0 4px;
+}
+
+.console-js code {
+    color: #fff;
+}
+
+.console-js .keyword {
+    color: #C1CFF1;
+}
+
+.console-js .string {
+    color: #00d061;
+}
+
+.console-js .punctuation {
+    color: #b3b3b3;
+}
+
+.console-js .function {
+    color: #ff97a0;
+}
+
+.console-js .run {
+    background: #ffde25;
+    color: #343434;
+    width: 100%;
+    max-width: fit-content;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+.console-js .run:hover {
+    background: #ffc525;
+}
+
+.container-more-about {
+    background: #1F1F1F;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.container-more-about .title {
+    color: #1f1f1f;
+    background: #fff;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+}
+
+.cards-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 80px;
+}
+
+.cards-about .card {
+    background: #282828;
+    width: 100%;
+    max-width: 310px;
+    height: 550px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 0px #0000004d;
+}
+
+.cards-about .card .image-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-about .card .image-card img {
+    width: 225px;
+    height: 225px;
+}
+
+.cards-about .card .text-card {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 4px;
+}
+
+.cards-about .card .show-more {
+    background: #ffde25;
+    color: #343434;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.cards-about .card .show-more:hover {
+    background: #ffc525;
+}
+
+.aprenda-js {
+    text-align: center;
+}
+
+.aprenda-js .title {
+    color: #ffde25;
+    background: #1f1f1f;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 8px 16px;
+}
+
+.aprenda-js .aulas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.aprenda-js .aulas .card-aulas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 300px;
+    background: #282828;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.aprenda-js .aulas .card-aulas img {
+    width: 200px;
+    height: auto;
+    margin-right: 16px;
+}
+
+.aprenda-js .aulas .card-aulas .sobre-curso {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.aprenda-js .aulas .card-aulas .sobre-curso .title-curso {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer {
+    background: #151515;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+footer .direitos {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 40px;
 }

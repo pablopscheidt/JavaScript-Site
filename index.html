@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>JavaScript</title>
@@ -18,20 +18,141 @@
             <span class="javascript">JavaScript</span>
         </a>
         <nav class="links-navigation">
-            <a class="sobre-link nav-menu" href="#">Sobre</a>
-            <a class="aprenda-link nav-menu" href="#">Aprenda JavaScript</a>
-            <a class="console-link" href="#">Console</a>
+            <a class="exemplo-link nav-menu" href="#exemplo">Exemplo</a>
+            <a class="sobre-link nav-menu" href="#sobre">Sobre o JavaScript</a>
+            <a class="aprenda-link nav-menu" href="#aprenda">Aprenda JavaScript</a>
         </nav>
     </header>
     <main>
         <div class="enterprise-use-js">
             <div class="title">As empresas de cartazes que usam JavaScript</div>
             <div class="enterprise-logos">
-                <a href="https://www.google.com.br/"><img src="resources/google-logo.png" alt="Google"></a>
-                <a href="https://www.microsoft.com/pt-br"><img src="resources/microsoft-logo.svg" alt="Microsoft"></a>
-                <a href="https://www.paypal.com/br/home"><img src="resources/paypal-logo.svg" alt="Pay Pal"></a>
+                <a href="https://www.google.com.br/" target="_blank"><img src="resources/google-logo.png" alt="Google"></a>
+                <a href="https://www.microsoft.com/pt-br" target="_blank"><img src="resources/microsoft-logo.svg" alt="Microsoft"></a>
+                <a href="https://www.paypal.com/br/home" target="_blank"><img src="resources/paypal-logo.svg" alt="Pay Pal"></a>
+            </div>
+        </div>
+
+        <div class="ready-to-use" id="exemplo">
+            <span class="is-ready">ESTÁ PRONTO PARA COMEÇAR NO JAVASCRIPT?</span>
+        </div>
+        
+        <pre class="console-js">
+            <div class="top-console">
+                <img src="resources/Ellipse 1.svg" alt="circle">
+                <img src="resources/Ellipse 2.svg" alt="circle">
+                <img src="resources/Ellipse 3.svg" alt="circle">
+            </div>
+            <code>
+                <span class="keyword">let</span> sorvete = <span class="string">'chocolate'</span><span class="punctuation">;</span>
+                <span class="keyword">if</span> <span class="punctuation">(</span>sorvete === <span class="string">'chocolate'</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+                    <span class="function">alert</span><span class="punctuation">(</span><span class="string">'Opa, Eu amo sorvete de chocolate!'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                <span class="punctuation">}</span> <span class="keyword">else</span> <span class="punctuation">{</span>
+                    <span class="function">alert</span><span class="punctuation">(</span><span class="string">'Ahh, mas chocolate é o meu favorito...'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                <span class="punctuation">}</span>
+            </code>
+            <button class="run" onclick="alerta()">RUN</button>
+        </pre>
+
+        <div class="container-more-about" id="sobre">
+            <span class="title">SAIBA MAIS SOBRE O JAVASCRIPT</span>
+
+            <div class="cards-about">
+                <div class="card">
+                    <div class="image-card"><img src="resources/mdn.png" alt="Javascript"></div>
+                    <div class="text-card">JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web ...</div>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                        <div class="show-more">Ver Mais</div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="image-card"><img src="resources/wikipedia-logo.png" alt="Javascript"></div>
+                    <div class="text-card">JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto ...</div>
+                    <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">
+                        <div class="show-more">Ver Mais</div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="image-card"><img src="resources/trybe.png" alt="Javascript"></div>
+                    <div class="text-card">Javascript é a linguagem mais popular da programação, segundo o estudo do site StackOverFlow. E, desde 2013, a linguagem criada pelo programador ...</div>
+                    <a href="https://blog.betrybe.com/javascript/" target="_blank">
+                        <div class="show-more">Ver Mais</div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="image-card"><img src="resources/tb_logo_2014.webp" alt="Javascript"></div>
+                    <div class="text-card">O JavaScript é uma linguagem de programação de alto nível voltada para o desenvolvimento web, criada originalmente para funcionar do lado do usuário, ou seja, nos navegadores ...</div>
+                    <a href="https://tecnoblog.net/responde/o-que-e-javascript-guia-para-iniciantes/" target="_blank">
+                        <div class="show-more">Ver Mais</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="aprenda-js" id="aprenda">
+            <span class="title">APRENDA JAVASCRIPT</span>
+            <div class="aulas">
+                <a href="https://jornadadodev.com.br/cursos/curso-completo-de-javascript">
+                    <div class="card-aulas">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEX///9dynIAdo9LpVu55cFUyGulwsxUuGcAb4oAdJExj3dNp1m96MOows+BvZ5QuGIAbYwzv0hYAAAA+ElEQVR4nO3PSRGAQBAEsOFcbvCvFhX0g0ocpCpsnLqsdNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0PBTR3w4Z53X3bJqyXq2fciqPms1NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDT81fAFLdI89p3p26cAAAAASUVORK5CYII=" alt="Jornada do dev">
+                        <div class="sobre-curso">
+                            <span class="title-curso">Jornada do Dev</span>
+                            <span class="text-curso">Aqui temos um curso completo de 36 videoaulas, cobrindo assuntos como o DOM, O Modelo de Objeto De Documento, desenvolvido em JavaScript. O curso traz informações e um guia para quem quer trabalhar Como Frontend em sites.</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.cursou.com.br/informatica/programacao/javascript/javascript-super-saiyajin/">
+                    <div class="card-aulas">
+                        <img src="https://www.cursou.com.br/wp-content/themes/tema-cursou/images/logo.png" alt="Cursou">
+                        <div class="sobre-curso">
+                            <span class="title-curso">Cursou</span>
+                            <span class="text-curso">Neste site, você incrivelmente não vai achar apenas um Curso Básico de JavaScript, mas diversos deles, cobrindo várias áreas de atuação da linguagem, claro que existe o Curso iniciante Básico para você dar seus primeiros passos.</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.unovacursos.com.br/index.php?route=/curso/curso-gratuito-de-javascript-para-iniciantes">
+                    <div class="card-aulas">
+                        <img src="https://cdn.unovacursos.com.br/themes/web/assets/img/brand/logo.svg" alt="FBV Cursos">
+                        <div class="sobre-curso">
+                            <span class="title-curso">FBV Cursos</span>
+                            <span class="text-curso">Este é um curso relativamente novo, porém conta com 13 aulas gerando cerca de 10 a 15 horas de aprendizado sobre JavaScript. O diferencial desse curso é que ele é completamente regulamentado pelo MEC, estão pode ter a expectativa de estar consumindo algo com muita qualidade e dedicação. </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.schoolofnet.com/curso/frontend/javascript/iniciando-com-javascript-rev3/">
+                    <div class="card-aulas">
+                        <img src="https://sonassets.s3.amazonaws.com/img/logo-top.png" alt="School of Net">
+                        <div class="sobre-curso">
+                            <span class="title-curso">School of Net</span>
+                            <span class="text-curso">Chegando nos primeiros lugares começa ficar difícil superar a qualidade, certo? Nem tanto, a School Of Net, é totalmente grátis, e tem um curso completo de JavaScript com um instrutor muito profissional na área e também em ensino.</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/introducao-ao-javascript/">
+                    <div class="card-aulas">
+                        <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy">
+                        <div class="sobre-curso">
+                            <span class="title-curso">Udemy</span>
+                            <span class="text-curso">São mais de 30 aulas super instrutórias para o JavaScript, você vai aprender tudo do zero, mesmo nunca usando qualquer algo relacionado. Vamos aprender a configurar um ambiente, falar sobre as variáveis, aprender as funcões.</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
+    <footer>
+        <a class="logo-js" href="index.html">
+            <img src="resources/logo-javascript.svg" alt="Logo JavaScript" width="35" height="35">
+            <span class="javascript">JavaScript</span>
+        </a>
+        <span class="direitos">© Todos direitos reservados, 2022</span>
+    </footer>
 </body>
 </html>
